@@ -22,6 +22,12 @@ public class Player extends Entity{
         this.screenX = gp.screenWidth/2 - (gp.tileSize/2);
         this.screenY = gp.screenHeight/2 - (gp.tileSize/2);
 
+        solidArea = new Rectangle();
+        solidArea.x = 8;
+        solidArea.y = 16;
+        solidArea.width = 32;
+        solidArea.height = 32;
+
         setDefaultValues();
         getPlayerImage();
     }
@@ -69,6 +75,9 @@ public class Player extends Entity{
                 direction = "right";
                 worldX += speed;
             }
+
+            collisionOn = false;
+            gp.cChecker.checkTitle(this);
 
             spriteCounter++;
             if(spriteCounter > 20){
