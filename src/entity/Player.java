@@ -126,12 +126,20 @@ public class Player extends Entity{
                         gp.playSE(3);
                         gp.obj[i] = null;
                         hasKey--;
+                    }else{
+                        gp.ui.showMessage("Dont have key!");
                     }
                     break;
                 case "Boots":
                     gp.playSE(2);
                     speed += 2;
                     gp.obj[i] = null;
+                    gp.ui.showMessage("Speed up!");
+                    break;
+                case "Chest":
+                    gp.ui.gameFinished = true;
+                    gp.stopMusic();
+                    gp.playSE(4);
                     break;
 
             }
