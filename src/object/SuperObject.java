@@ -1,6 +1,7 @@
 package object;
 
 import main.GamePanel;
+import main.UtilityTool;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -11,6 +12,7 @@ public class SuperObject {
     public String name;
     public boolean collision = false;
     public int worldX,worldY;
+    UtilityTool uTool = new UtilityTool();
 
     public Rectangle solidArea = new Rectangle(0,0,48,48);
 
