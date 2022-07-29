@@ -20,8 +20,15 @@ public abstract class Entity {
     GamePanel gp;
     public int actionLockCounter = 0;
 
+    String dialouges[] = new String[20];
+    int dialogueIndex = 0;
+
     public Entity(GamePanel gp){
         this.gp = gp;
+    }
+
+    public void speak(){
+
     }
 
     public BufferedImage setup(String imagePath){
