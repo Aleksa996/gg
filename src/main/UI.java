@@ -1,9 +1,7 @@
 package main;
 
+import entity.Entity;
 import object.OBJ_Heart;
-import object.OBJ_key;
-import object.SuperObject;
-
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
@@ -26,7 +24,7 @@ public class UI {
         arial_40 = new Font("Arial",Font.PLAIN,40);
         arial_80 = new Font("Arial",Font.BOLD,80);
 
-        SuperObject heart = new OBJ_Heart(gp);
+        Entity heart = new OBJ_Heart(gp);
         heart_full = heart.image;
         heart_half = heart.image2;
         heart_blank = heart.image3;
