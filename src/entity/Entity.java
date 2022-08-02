@@ -19,14 +19,17 @@ public abstract class Entity {
     public boolean collisionOn = false;
     GamePanel gp;
     public int actionLockCounter = 0;
-
     String dialouges[] = new String[20];
     int dialogueIndex = 0;
+
+    //Character status
+    public int maxLife;
+    public int life;
+
 
     public Entity(GamePanel gp){
         this.gp = gp;
     }
-
     public void speak(){
 
     }

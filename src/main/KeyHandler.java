@@ -38,7 +38,6 @@ public class KeyHandler implements KeyListener {
                     gp.ui.commandNum = 0;
                 }
             }
-
             if(code == KeyEvent.VK_ENTER){
                 if(gp.ui.commandNum == 0){
                     gp.gameState = gp.playState;
@@ -51,7 +50,6 @@ public class KeyHandler implements KeyListener {
                 }
             }
         }
-
         //Play state
         if(gp.gameState == gp.playState){
             if(code == KeyEvent.VK_W){
