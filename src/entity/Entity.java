@@ -121,7 +121,7 @@ public abstract class Entity {
                     worldX += speed;
                     break;
             }
-        }git
+        }
         spriteCounter++;
         if(spriteCounter > 20){
             if(spriteNum == 1){

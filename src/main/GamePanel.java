@@ -35,6 +35,7 @@ public class GamePanel extends JPanel implements Runnable {
     public Player player = new Player(this,keyH,screenWidth,screenWidth);
     public Entity[] obj = new Entity[10];
     public Entity[] npc = new Entity[10];
+    public Entity[] monster = new Entity[20];
     // Set player's default position
     int playerX = 100;
     int playerY = 100;
